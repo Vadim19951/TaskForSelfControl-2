@@ -8,6 +8,11 @@ Interface Segregation
 Printable (только print) и Scannable (scan).
 Класс SimplePrinter реализует только Printable.
 
+- Printable и Scannable наследуются от SmartPrinter, что противоречит идее разделения интерфейса
+- SmartPrinter пуст, что делает наследование от него излишним
+
+Привет, насколько помню, ты его не разделил, а просто отнаследовался
+
  */
 
 public class Main9 {
@@ -17,3 +22,4 @@ public class Main9 {
         simplePrinter.print(txt);
     }
 }
+

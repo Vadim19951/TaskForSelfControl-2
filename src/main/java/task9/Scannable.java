@@ -1,5 +1,5 @@
 package task9;
 
-public interface Scannable extends SmartPrinter {
+public interface Scannable {
     void scan();
 }

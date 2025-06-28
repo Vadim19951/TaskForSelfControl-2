@@ -2,18 +2,18 @@ package task2;
 
 public class ShapeFactory {
 
-    static Figure ofSquare(double side) {
+    public static Figure ofSquare(double side) {
         Figure figure = new Figure();
-        figure.name = "Square";
-        figure.size = side * side;
+        figure.setName("Square");
+        figure.setSize(side * side);
         return figure;
     }
 
-    static Figure ofRectangle(double w, double h) {
+    public static Figure ofRectangle(double w, double h) {
 
         Figure figure = new Figure();
-        figure.name = "Rectangle";
-        figure.size = (w * 2) + (h * 2);
+        figure.setName("Rectangle");
+        figure.setSize(w * h);
         return figure;
     }
 

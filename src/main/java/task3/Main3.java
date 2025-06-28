@@ -16,7 +16,12 @@ public class Main3 {
 
     public static void main(String[] args) {
         MapForReadOnly mapForReadOnly = new MapForReadOnly();
-        Map<String, Integer> newMap = mapForReadOnly.unmodifiableGrades(MapForReadOnly.getGrades());
-        newMap.put("Idaho", 8);
+        Map<String, Integer> newMap = mapForReadOnly.unmodifiableGrades(mapForReadOnly.getGrades());
+        try {
+            newMap.put("Idaho", 8);
+        }catch (Exception e){
+            System.err.println(e);
+        }
+
     }
 }

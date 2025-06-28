@@ -9,6 +9,12 @@ equals / hashCode
 чтобы new Task(1,"a").equals(new Task(1,"b")) было true.
 
 Покройте тестом.
+
+
+FIX - В equals можно добавить проверку класса объекта с помощью getClass() вместо instanceof
+
+FIX - Отсутствует тестирование через JUnit
+
  */
 
 public class Main1 {

@@ -17,7 +17,7 @@ public class Task {
     public boolean equals(Object obj){
         if (this == obj) return true;
         if( obj == null) return  false;
-        if (obj instanceof  Task){
+        if (obj.getClass() ==  getClass()){
             if (this.id == ((Task) obj).id ){
                 return  true;
             }

@@ -16,7 +16,6 @@ public class Main5 {
         ConsolePrinter consolePrinter = new ConsolePrinter();
         consolePrinter.println("Helo!");
         consolePrinter.print("Hi");
-
     }
 }
 

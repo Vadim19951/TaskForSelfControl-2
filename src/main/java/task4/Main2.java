@@ -1,10 +1,14 @@
 package task4;
+
 /*
 LinkedList vs ArrayList	
 
 Измерьте (System.nanoTime)
 время вставки 10 000 элементов в начало ArrayList и LinkedList,
 выведите результаты.
+
+
+
  */
 
 
@@ -22,16 +26,19 @@ public class Main2 {
     }
 
     public static void getMeasureOfFillingList(List<String> list){
+        for (int i = 0; i < 10000; i++) {
+            list.add(0, "testWarm");
+        }
+        list.clear();
         long endTime;
         long startTime = System.nanoTime();
         for (int i = 0; i <10000; i++) {
             list.add(0, "Test");
         }
         endTime = System.nanoTime();
-        System.out.println("startTime = " + startTime + "\nendTime = " + endTime +
-                "\noperationTime = " + (endTime - startTime) + "\n---");
+        System.out.println("Type of List = " + list.getClass().getSimpleName() + "\n\nstartTime = " + startTime + "\nendTime = " + endTime +
+                "\noperationTime = " + (endTime - startTime) + "\n------------------------------");
     }
-
 }
 
 

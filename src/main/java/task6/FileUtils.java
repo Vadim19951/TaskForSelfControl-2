@@ -6,12 +6,8 @@ import java.nio.file.Path;
 
 public class FileUtils {
 
-    public static void readText(Path p){
-        try {
-            String content = Files.readString(p);
-
-        }catch (IOException e){
-            System.err.println(e.getMessage());
-        }
+    public static void readText(Path p) throws IOException {
+        String content = Files.readString(p);
+        System.out.println(content);
     }
 }

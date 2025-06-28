@@ -13,15 +13,10 @@ public class Main7 {
         System.out.println(canStart(TaskStatus.NEW));
     }
 
-    public static boolean canStart(TaskStatus taskStatus){
-        switch (taskStatus){
-            case NEW -> {
-                return true;
-            }
-            case IN_PROGRESS, DONE, BLOCKED ->{
-                return false;
-            }
-        }
-        return false;
+    public static boolean canStart(TaskStatus taskStatus) {
+        return switch (taskStatus) {
+            case NEW -> true;
+            case IN_PROGRESS, DONE, BLOCKED -> false;
+        };
     }
 }

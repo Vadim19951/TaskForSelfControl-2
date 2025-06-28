@@ -23,21 +23,4 @@ public class TestTask8 {
     }
 
 
-
-//    @Test
-//    void canStart1() {
-//        boolean expected = true;
-//        boolean result = Main8.canStart1(TaskStatus1.NEW);
-//        assertEquals(expected, result);
-//        boolean expected1 = false;
-//        boolean result1 = Main8.canStart1(TaskStatus1.IN_PROGRESS);
-//        assertEquals(expected1, result1);
-//        boolean expected2 = false;
-//        boolean result2 = Main8.canStart1(TaskStatus1.DONE);
-//        assertEquals(expected2, result2);
-//        boolean expected3 = false;
-//        boolean result3 = Main8.canStart1(TaskStatus1.BLOCKED);
-//        assertEquals(expected3, result3);
-//    }
-
 }

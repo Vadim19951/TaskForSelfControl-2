@@ -1,6 +1,5 @@
 package task9;
 
-public interface Printable extends SmartPrinter {
-
+public interface Printable {
     void print(String text);
 }
